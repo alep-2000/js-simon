@@ -25,7 +25,7 @@ SOLUZIONE:
 Dopo 30 secondi i numeri scompaiono e l'utente deve inserire, uno alla volta, i numeri che ha visto precedentemente, tramite il prompt().
 
 SOLUZIONE:
-1 - Utilizzare .remove per rimuovere i numeri random;
+1 - Utilizzare .innerHTML=''; per rimuovere i numeri random;
 2 - Utilizzare 5 prompt in cui si chiede all'utente di inserire i 5 numeri random visti precedentemente;
 
 4° SOTTOPROBLEMA:
