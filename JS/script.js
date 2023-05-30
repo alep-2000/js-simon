@@ -8,13 +8,30 @@ function stop(){
 }
 
 
+let insertPrimeNumber= '';
+let insertSecondNumber= '';
+let insertThirdNumber= '';
+let insertFourthNumber= '';
+let insertFifthNumber= '';
+ 
+
+
 function visual(){
-    let insertPrimeNumber= prompt('Inserisci il primo numero');
-    let insertSecondNumber= prompt('Inserisci il secondo numero');
-    let insertThirdNumber= prompt('Inserisci il terzo numero');
-    let insertFourthNumber= prompt('Inserisci il quarto numero');
-    let insertFifthNumber= prompt('Inserisci il quinto numero');
+    insertPrimeNumber= parseInt(prompt('Inserisci il primo numero'));
+    insertSecondNumber= parseInt(prompt('Inserisci il secondo numero'));
+    insertThirdNumber= parseInt(prompt('Inserisci il terzo numero'));
+    insertFourthNumber= parseInt(prompt('Inserisci il quarto numero'));
+    insertFifthNumber= parseInt(prompt('Inserisci il quinto numero'));
+    
+    playerNumber.push(insertPrimeNumber);
+    playerNumber.push(insertSecondNumber);
+    playerNumber.push(insertThirdNumber);
+    playerNumber.push(insertFourthNumber);
+    playerNumber.push(insertFifthNumber);
 }
+let playerNumber= [];
+console.log(playerNumber)
+
 
 // ARRAY
 let number= [];
@@ -43,4 +60,5 @@ let timer= setInterval(function(){
 const timeOut= setTimeout(stop, 31000);
 
 let numberPlayer= setTimeout(visual, 32000);
+
 
